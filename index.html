@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final Project">
+    <meta name="author" content="Christopher Park"> 
+    <link rel="stylesheet/less" type="text/css" href="styles/main.less" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.4.3/js/jquery.terminal.js"></script>
+    <script type="text/javascript" src="src/shell.js"></script>
+    <script type="text/javascript" src="src/cli.js"></script>
+  </head>
+  <body class="column">
+    <header class='row' id="top">
+      <div class='column line-container'>
+          <div class='line' id='line-1'></div>
+          <div class='line' id='line-2'></div>
+          <div class='line' id='line-3'></div>
+          <div class='line' id='line-4'></div>
+      </div>
+      <nav class='row'>
+          <a class='row button' id='selected'>
+              <svg><title>home icon</title><use href='images/sprites.svg#home'></use></svg>
+              <span class='sh2'>Home</span>
+          </a>
+          <a href='pages/projects_page.html' class='row button'>
+              <svg><title>projects icon</title><use href='images/sprites.svg#bookmark'></use></svg>
+              <span class='sh2'>Projects</span>
+          </a>
+      </nav>
+    </header>
+    <main class='column'>
+      <div class='column' id='title'>
+        <h1>Christopher Park</h1>
+        <p class='sh1' id='subtitle'>Majoring in Data Science and Computer Science (but also interested in <a href=''> other stuff</a>) at NYU</p>
+      </div>
+    </main>
+      <section class="terminal-window">
+        <header>
+          <div class="button red"></div>
+          <div class="button yellow"></div>
+          <div class="button green"></div>
+        </header>
+        <div id="terminal">
+          <p><span class="green">\[._.]/</span> - Thanks for visiting my Website! <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            Type 'help' to get started.</p>
+            <p class="hidden">
+              <span class="prompt">
+                <span class="root">root</span>
+                <span class="tick">❯</span>
+              </span>
+              <span contenteditable="true" class="input" spellcheck="false"></span>
+            </p>
+        </div>
+      </section>
+    <footer>
+      <p>© Christopher Park 2024</p>
+    </footer>
+   </body>
+</html>
