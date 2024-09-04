@@ -1,17 +1,17 @@
-@font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+@font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier", Ubuntu, "Open Sans";
 
 :root {
   --fullShade: #050505;
   --emptyShade: #FAFAFA;
   --lightestShade: #E1E4E8;
   --lightShade: #959DA5;
-  --darkShade: #586069;
+  --darkShade: #393c40;
   --darkerShade: #2F363D;
   --bg: #F1EDE5;
 }
 
 h1 {
-  color: #e0e8f0;
+  color: rgb(176, 174, 174);;
   font-family: 'Helvetica', sans-serif;
   font-size: 100px;
   font-weight: bold;
@@ -29,20 +29,34 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 72px;
+  font-weight: bold;
+  letter-spacing: -4px;
+  line-height: 115%;
+  margin: 0;
+}
+
 .p1 {
-  font-size: 24px;
-  letter-spacing: -1px;
-  margin-bottom: 24px;
+  font-size: 20px;
+  color:rgb(176, 174, 174)
 }
 
 .p12 {
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: -1px;
   margin-bottom: 22px;
+  color:rgb(176, 174, 174)
+}
+
+.sh5 {
+  font-size: 20px;
+  color:rgb(176, 174, 174)
 }
 
 body {
-  background-color: #211E3A;
+  background-color: #1b1a1a;
 }
 
 footer {
@@ -87,11 +101,11 @@ video {
 
 }
 .sh1 {
-  font-family: 'PF-DIN-Text-Pro', monospace;
-  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
   letter-spacing: 0.8px;
   margin: 0;
-  text-transform: uppercase;
+  color:rgb(176, 174, 174)
 }
 
 .sh2 {
@@ -100,17 +114,32 @@ video {
   letter-spacing: 1px;
   margin: 0;
   text-transform: uppercase;
+  color: rgb(176, 174, 174);
+}
+
+.sh3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 22px;
+  color: rgb(237, 235, 235);
 }
 
 svg {
   width: 16px;
   height: 16px;
-  color: #e0e8f0
+  color: rgb(176, 174, 174);
 }
 
 .row {
   display: flex;
   flex-direction: row;
+}
+
+.row2 {
+  display: flex;        /* Enable flexbox for this container */
+  align-items: center;  /* Vertically align the icons to the center */
+  gap: 10px;            /* Add some space between the icons */
 }
 .column {
   display: flex;
@@ -118,8 +147,8 @@ svg {
 }
 
 #top {
-  padding: 15px 40px;
-  gap: 16px;
+  padding: 1px 1px;
+  
 }
 
 #top2 {
@@ -134,7 +163,7 @@ svg {
 
 }
 .line {
-  background-color: #e0e8f0;
+  background-color: rgb(176, 174, 174);
   align-self: stretch;
 }
 #line-1 {
@@ -157,8 +186,8 @@ nav {
   gap: 8px;
 
   .button {
-    color: #e0e8f0;
-    background-color: #211E3A;
+    color: rgb(176, 174, 174);
+    background-color: #1d1d1d;
     border-radius: 4px;
     border: 0;
     box-shadow: 0 0 0 0;
@@ -204,7 +233,7 @@ nav {
 
   font-family: @font-family;
   color: #e0e8f0;
-  background-color: #211E3A;
+  background-color: #2d2d2d;;
   border-radius: 4px;
   border: 0;
   box-shadow: 0 0 0 0;
@@ -238,7 +267,7 @@ nav {
 
   font-family: @font-family;
   color: #e0e8f0;
-  background-color: #211E3A;
+  background-color: #2d2d2d;;
   border-radius: 4px;
   border: 0;
   box-shadow: 0 0 0 0;
@@ -272,7 +301,7 @@ nav {
 
   font-family: @font-family;
   color: #e0e8f0;
-  background-color: #211E3A;
+  background-color: #2d2d2d;
   border-radius: 4px;
   border: 0;
   box-shadow: 0 0 0 0;
@@ -330,7 +359,7 @@ main {
   gap: 8px;
 }
 #subtitle {
-  color: var(--darkShade);
+  color: var(--lightShade);
 }
 
 #tile-stack {
@@ -348,37 +377,37 @@ main {
   box-sizing: border-box;
   transition: 0.08s;
 }
-.tile:hover {
-  color: var(--darkerShade);
+// .tile:hover {
+//   color: var(--darkerShade);
 
-  transition: 0.08s;
-}
-.tile:active {
-  color: var(--darkerShade);
+//   transition: 0.08s;
+// }
+// .tile:active {
+//   color: var(--darkerShade);
 
-  transition: 0s;
-}
+//   transition: 0s;
+// }
 .tl {
   /* width: 480px; */
   width: 35.29411765%;
-  height: 480px;
-  box-shadow: inset 0px -8px 0px 12px var(--darkShade);
+  height: 550px;
+  box-shadow: inset 1px 3px 3px 3px var(--darkShade);
 
   padding: 40px;
 }
-.tl:hover {
-  box-shadow: inset 0px -8px 0px 12px var(--darkerShade);
-}
-.tl:active {
-  box-shadow: inset 0px 2px 0px 6px var(--darkerShade);
+// .tl:hover {
+//   box-shadow: inset 0px -8px 0px 12px var(--darkerShade);
+// }
+// .tl:active {
+//   box-shadow: inset 0px 2px 0px 6px var(--darkerShade);
 
-  padding: 50px 40px 30px 40px;
-}
+//   padding: 50px 40px 30px 40px;
+// }
 
 .tl2 {
   /* width: 480px; */
   width: 35.29411765%;
-  height: 480px;
+  height: 550px;
   box-shadow: inset 0px -8px 0px 12px var(--darkShade);
 
   padding: 40px;
@@ -393,10 +422,6 @@ main {
   transition: 0.08s;
 }
 
-.top {
-  justify-content: flex-end;
-  flex-grow: 1;
-}
 
 #flashing {
   animation: 2.0s infinite flashing;
@@ -698,7 +723,7 @@ main {
   }
   .tl {
       height: 160px;
-      box-shadow: inset 0px -4px 0px 8px var(--darkShade);
+      box-shadow: inset 1px 1px 1px 1px var(--darkShade);
   
       padding: 24px;
   }

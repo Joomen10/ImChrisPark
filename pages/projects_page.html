@@ -6,6 +6,12 @@
         <link rel="stylesheet/less" type="text/css" href="../styles/main.less"/>
         <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
     <body class="column">
         <header class='row' id="top">
@@ -15,6 +21,7 @@
             <div class='line' id='line-3'></div>
             <div class='line' id='line-4'></div>
         </div>
+        <div>  &nbsp; &nbsp; </div>
         <nav class='row'>
             <a href='../index.html' class='row button'>
                 <svg><title>home icon</title><use href='../images/sprites.svg#home'></use></svg>
@@ -27,23 +34,108 @@
         </nav>
         </header>
         <main class='column'>
-            <div class='column' id='title'>
+            <div class='column'>
                 <h1>Projects</h1>
                 <p class='sh1' id='subtitle'>Personal, Groups, Hackathons, Courses</p>
             </div>
             <section class='row content'>
                 <!-- Headliners -->
-                <a href='https://www.betrende.shop' target='_blank' rel='noopener' class='column tile tl'>
+                <div class='column tile tl'>
+                    <div class="sh3" style="text-align: center; margin-bottom: 5px">Web Development Project</div>
+                    <p class='sh1' style="text-align: center">Full-Stack Developer | 2023 Aug - 2023 Oct</p>
+                    <br>
+                    <div class='column'>
+                        <img src="../images/betrende_img.png" style="height: 220px; width: 430px;" alt="project1_image">
+                        <br>
+                        <p class='sh1' style="text-align: center; font-weight: bold; font-size: 17px;">E-commerce Fashion Site: Betrende</p>
+                        <br>
+                        <div class="row2" style="justify-content: center;">
+                            <a href="https://github.com/Joomen10/BETRENDE"><img src="../images/github-icon-2.svg" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;"></sh3></a>
+                        </div>  
+                        <div class="row2">
+                            <img src="../images/html_css_js_icon.png" style="height: 50px; width: 100px;" alt="html_icon">
+                            <img src="../images/mysql_icon.svg" style="height: 70px; width: 150px;" alt="html_icon">
+                            <img src="../images/springboot_icon.png" style="height: 40px; width: 170px;" alt="html_icon">
+                            <img src="../images/java_icon.png" style="height: 50px; width: 100px;" alt="html_icon">
+                        </div> 
+                        <br>
+                        
+                    </div>
+                </div>
+                <a href='https://github.com/Joomen10/Buddies-AI/tree/main' target='_blank' rel='noopener' class='column tile tl'>
                     <div class='column top'>
                         <svg class='icon-l'><use href='images/sprites.svg#Ramp'></use></svg> 
-                        <img src="../images/betrende_img.png" style="height: 200px; width: 400px;" alt="project1_image">
-                        <p class='p1'>E-commerce Fashion Site: Betrende</p>
+                        <img src="../images/buddiesAI_img.png" style="height: 200px; width: 400px;"alt="project2_image">
+                        <p class='p1'>LIKELION US Hackathon: Buddies-AI</p>
                         <br><br>
                     </div>
                     <div class='row bottom'>
-                        <p class='sh1'>Full-Stack Developer · <br> 2023 Aug — <span id='flashing'>█</span></p>
+                        <p class='sh1'>Full-Stack Developer · <br> 2024 Jan</span></p>
                     </div>
                 </a>
+                <span target='_blank' rel='noopener' class='column tile2 tl2'>
+                    <div class='column top2'>
+                        <nav class="row">
+                            <button id="playButton">Play</button>
+                            <button id="pauseButton">Pause</button>
+                            <button id="stopButton">Stop</button>
+                        </nav>
+                        <video id="myVideo" width="340" height="208.5" controls>
+                            <source src="../images/DemoVid.mp4" type="video/mp4" alt="project3_video">
+                            Your browser does not support the video tag.
+                        </video>
+                        <script>
+                            $(document).ready(function() {
+                                var video = $("#myVideo").get(0); 
+                    
+                                $("#playButton").click(function() {
+                                    video.play();
+                                });
+                    
+                                $("#pauseButton").click(function() {
+                                    video.pause();
+                                });
+                    
+                                $("#stopButton").click(function() {
+                                    video.pause();
+                                    video.currentTime = 0;
+                                });
+                            });
+                        </script>       
+                        <p class='p12'>HackNYU Hackathon: BounceNYC</p>
+                    </div>
+                    <br><br>
+                    <div class='row bottom'>
+                        <p class='sh1'>Back-end Developer · <br> 2023 Dec</p>
+                    </div>
+                </span>
+            </section>
+            <section class='row content'>
+                <!-- Headliners -->
+                <div class='column tile tl'>
+                    <p class="sh3" style="text-align: center;">Web Development Project</p>
+                    <p class='sh5' style="text-align: center;">E-commerce Fashion Site: Betrende</p>
+                    <div class='column top'>
+                        <img src="../images/betrende_img.png" style="height: 220px; width: 430px;" alt="project1_image">
+                        <br>
+                        <p class='sh1' style="text-align: center">Pages: </p>
+                        <div class="row2" style="justify-content: center;">
+                            <a href="https://github.com/Joomen10/BETRENDE"><img src="../images/github_icon.png" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;">GitHub</sh3></a>
+                            <a href="https://medium.com/@park11871247/nyc-yellow-taxi-ride-data-analysis-7837dda95f0e"><img src="../images/medium_icon.svg" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;">Medium</sh3></a>
+                        </div>  
+                        <br>
+                        <p class='sh1' style="text-align: center">Skills: </p>
+                        <div class="row2">
+                            <img src="../images/html_css_js_icon.png" style="height: 50px; width: 100px;" alt="html_icon">
+                            <img src="../images/mysql_icon.svg" style="height: 70px; width: 150px;" alt="html_icon">
+                            <img src="../images/springboot_icon.png" style="height: 50px; width: 110px;" alt="html_icon">
+                            <img src="../images/java_icon.png" style="height: 50px; width: 100px;" alt="html_icon">
+                        </div> 
+                        <br>
+                        <p class='sh1' style=" font-size: large; font-weight: bold; text-align: center">Full-Stack Developer</p>
+                        <p class='sh1' style=" font-size: large; font-weight: bold; text-align: center">2023 Aug - 2023 Oct </p>
+                    </div>
+                </div>
                 <a href='https://github.com/Joomen10/Buddies-AI/tree/main' target='_blank' rel='noopener' class='column tile tl'>
                     <div class='column top'>
                         <svg class='icon-l'><use href='images/sprites.svg#Ramp'></use></svg> 
