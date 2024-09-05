@@ -36,10 +36,181 @@
         <main class='column'>
             <div class='column'>
                 <h1>Projects</h1>
-                <p class='sh1' id='subtitle'>Personal, Groups, Hackathons, Courses</p>
+                <p class='sh2' id='subtitle'>Personal, Groups, Hackathons, Courses</p>
             </div>
             <section class='row content'>
                 <!-- Headliners -->
+                <div class='column tile tl'>
+                    <div class="sh3" style="text-align: center; margin-bottom: 5px">Web Development Project</div>
+                    <p class='sh1' style="text-align: center">Full-Stack Developer | Aug 2023 - Oct 2023</p>
+                    <br>
+                    <div class='column'>
+                        <img src="../images/betrende_img.png" style="height: 220px; width: 430px;" alt="project1_image">
+                        <br>
+                        <p class='sh1' style="text-align: center; font-weight: bold; font-size: 19px;  margin-bottom: 5px; color:rgb(237, 235, 235)">E-commerce Fashion Site: Betrende</p>
+                        <br>
+                        <div class="sh1 row2" style="justify-content: center;">&nbsp;SKILLS:</div>
+                        <div class="row2">
+                            <img src="../images/html_css_js_icon.png" style="height: 50px; width: 100px;" alt="html_icon">
+                            <img src="../images/mysql_icon.svg" style="height: 70px; width: 150px;" alt="html_icon">
+                            <img src="../images/springboot_icon.png" style="height: 40px; width: 170px;" alt="html_icon">
+                            <img src="../images/java_icon.png" style="height: 50px; width: 100px;" alt="html_icon">
+                        </div> 
+                        <div class="sh1 row2" style="justify-content: center; margin-bottom: 10px">&nbsp;LINKS:</div>
+                        <div class="row2" style="justify-content: center;">
+                            <a href="https://github.com/Joomen10/BETRENDE"><img src="../images/github-icon-2.svg" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;"></sh3></a>
+                        </div>                      
+                    </div>
+                </div>
+                <div class='column tile tl'>
+                    <div style="margin-bottom: 5px"></div>
+                    <div class="sh3" style="font-size: 16px; text-align: center; margin-bottom: 7.5px">PDF Reader and Voice Responsing Chatbot</div>
+                    <p class='sh1' style="text-align: center">Full-Stack Developer | Jan 2024 </p>
+                    <br>
+                    <div class='column'>
+                        <img src="../images/buddiesAI_img.png" style="height: 220px; width: 430px; margin-bottom: 2px" alt="project1_image">
+                        <br>
+                        <p class='sh1' style="text-align: center; font-weight: bold; font-size: 17px; margin-bottom: 7px; color:rgb(237, 235, 235)">Elderly-friendly Chatbot: BuddiesAI</p>
+                        <br>
+                        <div class="sh1 row2" style="justify-content: center; margin-bottom: 10px;">&nbsp;SKILLS:</div> 
+                        <div class="row2" style="justify-content: center; margin-bottom: 5px">
+                            <img src="../images/Streamlit_icon.png" style="height: 51px; width: 80px;" alt="html_icon">
+                            <img src="../images/python_icon.png" style="height: 54px; width: 53px;" alt="html_icon">
+                        </div> 
+                        <div class="sh1 row2" style="justify-content: center; margin-bottom: 10px;">&nbsp;LINKS:</div>
+                        <div class="row2" style="justify-content: center;">
+                            <a href="https://github.com/Joomen10/Buddies-AI"><img src="../images/github-icon-2.svg" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;"></sh3></a>
+                        </div>                      
+                    </div>
+                </div>
+                <div class='column tile tl'>
+                    <div class="sh3" style="text-align: center; margin-bottom: 7px">Game Development Project</div>
+                    <p class='sh1' style="text-align: center">Back-end Developer | Dec 2023 </p>
+                    <br>
+                    <div class='column'>
+                        <nav class="row">
+                            <button id="playButton">Play</button>
+                            <button id="pauseButton">Pause</button>
+                            <button id="stopButton">Stop</button>
+                        </nav>
+                        <video id="myVideo" style="margin-bottom:17px;" width="350" height="187" controls>
+                            <source src="../images/DemoVid.mp4" type="video/mp4" alt="project3_video">
+                            Your browser does not support the video tag.
+                        </video>
+                        <script>
+                            $(document).ready(function() {
+                                var video = $("#myVideo").get(0); 
+                    
+                                $("#playButton").click(function() {
+                                    video.play();
+                                    video.style.width = "1000px";  // Adjust the width as needed
+                                    video.style.height = "800px";
+                                    video.style.position = "absolute";
+                                    video.style.top = "60%";
+                                    video.style.left = "38%";
+                                    video.style.transform = "translate(-50%, -50%)";
+                        
+                                });
+                    
+                                $("#pauseButton").click(function() {
+                                    video.pause();
+                                });
+
+                                video.addEventListener('ended', function() {
+                                    video.style.width = "350px";  // Reset to original width
+                                    video.style.height = "187px";
+                                    video.style.position = "static";  // Reset position
+                                    video.style.transform = "none";
+                                });
+                    
+                                $("#stopButton").click(function() {
+                                    video.pause();
+                                    video.currentTime = 0;
+                                    video.style.width = "350px";  // Reset to original width
+                                    video.style.height = "187px";
+                                    video.style.position = "static";  // Reset position
+                                    video.style.transform = "none";
+                                });
+                            });
+                        </script> 
+                        
+                        <p class='sh1' style="text-align: center; font-weight: bold; font-size: 19px; margin-bottom: 6px; color:rgb(237, 235, 235)">Ball Navigating Game: BounceNYC</p>
+                        <br>
+                        <div class="sh1 row2" style="justify-content: center;">&nbsp;SKILLS:</div>
+                        <div class="row2" style="justify-content: center;">
+                            <img src="../images/pygame_icon.png" style="height: 55px; width: 130px; margin-bottom: 11px" alt="html_icon">
+                        </div> 
+                        <div class="sh1 row2" style="justify-content: center; margin-bottom: 10px;">&nbsp;LINKS:</div>
+                        <div class="row2" style="justify-content: center;">
+                            <a href="https://github.com/Joomen10/BounceNYC"><img src="../images/github-icon-2.svg" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;"></sh3></a>
+                        </div>                      
+                    </div>
+                </div> 
+            </section>
+            <section class='row content'>
+                <!-- Headliners -->
+                <div class='column tile tl'>
+                    <div class="sh3" style="text-align: center; margin-bottom: 5px">UI/UX Project</div>
+                    <p class='sh1' style="text-align: center">Back-end Developer | Nov 2023 </p>
+                    <br>
+                    <div class='column'>
+                        <nav class="row">
+                            <button id="playButton2">Play</button>
+                            <button id="pauseButton2">Pause</button>
+                            <button id="stopButton2">Stop</button>
+                        </nav>
+                        <video id="myVideo2" width="350" height="187" controls>
+                            <source src="../images/TravelKit.mp4" type="video/mp4" alt="project4_video">
+                            Your browser does not support the video tag.
+                        </video>
+                        <script>
+                            $(document).ready(function() {
+                                var video2 = $("#myVideo2").get(0); 
+                    
+                                $("#playButton2").click(function() {
+                                    video2.play();
+                                    video2.style.width = "1000px";  // Adjust the width as needed
+                                    video2.style.height = "800px";
+                                    video2.style.position = "absolute";
+                                    video2.style.top = "125%";
+                                    video2.style.left = "60%";
+                                    video2.style.transform = "translate(-50%, -50%)";
+                                });
+                    
+                                $("#pauseButton2").click(function() {
+                                    video2.pause();
+                                });
+
+                                video2.addEventListener('ended', function() {
+                                    video2.style.width = "350px";  // Reset to original width
+                                    video2.style.height = "187px";
+                                    video2.style.position = "static";  // Reset position
+                                    video2.style.transform = "none";
+                                });
+                    
+                                $("#stopButton2").click(function() {
+                                    video2.pause();
+                                    video2.currentTime = 0;
+                                    video2.style.width = "350px";  // Reset to original width
+                                    video2.style.height = "187px";
+                                    video2.style.position = "static";  // Reset position
+                                    video2.style.transform = "none";
+                                });
+                            });
+                        </script>
+                        <br>
+                        <p class='sh1' style="text-align: center; font-weight: bold; font-size: 16.1px; margin-bottom: 5px; color:rgb(237, 235, 235)">Travel Partner Matching APP: TravelKit</p>
+                        <br>
+                        <div class="sh1 row2" style="justify-content: center; margin-bottom: 5px;">&nbsp;SKILLS:</div>
+                        <div class="row2" style="justify-content: center;">
+                            <img src="../images/figma_icon.png" style="height: 50px; width: 50px; margin-bottom: 11px" alt="html_icon">
+                        </div> 
+                        <div class="sh1 row2" style="justify-content: center; margin-bottom: 10px;">&nbsp;LINKS:</div>
+                        <div class="row2" style="justify-content: center;">
+                            <a href="https://www.figma.com/design/CIfqsMC20JCzdcIrLeQR2m/LIKELION-TravelKit-WireFrame?node-id=55-104&t=yDxxRzXF72QpyE8f-1"><img src="../images/figma_icon.png" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;"></sh3></a>
+                        </div>                          
+                    </div>
+                </div>
                 <div class='column tile tl'>
                     <div class="sh3" style="text-align: center; margin-bottom: 5px">Web Development Project</div>
                     <p class='sh1' style="text-align: center">Full-Stack Developer | 2023 Aug - 2023 Oct</p>
@@ -47,142 +218,41 @@
                     <div class='column'>
                         <img src="../images/betrende_img.png" style="height: 220px; width: 430px;" alt="project1_image">
                         <br>
-                        <p class='sh1' style="text-align: center; font-weight: bold; font-size: 17px;">E-commerce Fashion Site: Betrende</p>
-                        <br>
-                        <div class="row2" style="justify-content: center;">
-                            <a href="https://github.com/Joomen10/BETRENDE"><img src="../images/github-icon-2.svg" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;"></sh3></a>
-                        </div>  
+                        <p class='sh1' style="text-align: center; font-weight: bold; font-size: 17px;  margin-bottom: 5px">E-commerce Fashion Site: Betrende</p>
+                        <!-- <div class="sh1 row2" style="justify-content: center;">&nbsp;SKILLS:</div> -->
                         <div class="row2">
                             <img src="../images/html_css_js_icon.png" style="height: 50px; width: 100px;" alt="html_icon">
                             <img src="../images/mysql_icon.svg" style="height: 70px; width: 150px;" alt="html_icon">
                             <img src="../images/springboot_icon.png" style="height: 40px; width: 170px;" alt="html_icon">
                             <img src="../images/java_icon.png" style="height: 50px; width: 100px;" alt="html_icon">
                         </div> 
-                        <br>
-                        
+                        <div class="sh1 row2" style="justify-content: center; margin-bottom: 5px">&nbsp;LINKS:</div>
+                        <div class="row2" style="justify-content: center;">
+                            <a href="https://github.com/Joomen10/BETRENDE"><img src="../images/github-icon-2.svg" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;"></sh3></a>
+                        </div>                      
                     </div>
                 </div>
-                <a href='https://github.com/Joomen10/Buddies-AI/tree/main' target='_blank' rel='noopener' class='column tile tl'>
-                    <div class='column top'>
-                        <svg class='icon-l'><use href='images/sprites.svg#Ramp'></use></svg> 
-                        <img src="../images/buddiesAI_img.png" style="height: 200px; width: 400px;"alt="project2_image">
-                        <p class='p1'>LIKELION US Hackathon: Buddies-AI</p>
-                        <br><br>
-                    </div>
-                    <div class='row bottom'>
-                        <p class='sh1'>Full-Stack Developer · <br> 2024 Jan</span></p>
-                    </div>
-                </a>
-                <span target='_blank' rel='noopener' class='column tile2 tl2'>
-                    <div class='column top2'>
-                        <nav class="row">
-                            <button id="playButton">Play</button>
-                            <button id="pauseButton">Pause</button>
-                            <button id="stopButton">Stop</button>
-                        </nav>
-                        <video id="myVideo" width="340" height="208.5" controls>
-                            <source src="../images/DemoVid.mp4" type="video/mp4" alt="project3_video">
-                            Your browser does not support the video tag.
-                        </video>
-                        <script>
-                            $(document).ready(function() {
-                                var video = $("#myVideo").get(0); 
-                    
-                                $("#playButton").click(function() {
-                                    video.play();
-                                });
-                    
-                                $("#pauseButton").click(function() {
-                                    video.pause();
-                                });
-                    
-                                $("#stopButton").click(function() {
-                                    video.pause();
-                                    video.currentTime = 0;
-                                });
-                            });
-                        </script>       
-                        <p class='p12'>HackNYU Hackathon: BounceNYC</p>
-                    </div>
-                    <br><br>
-                    <div class='row bottom'>
-                        <p class='sh1'>Back-end Developer · <br> 2023 Dec</p>
-                    </div>
-                </span>
-            </section>
-            <section class='row content'>
-                <!-- Headliners -->
                 <div class='column tile tl'>
-                    <p class="sh3" style="text-align: center;">Web Development Project</p>
-                    <p class='sh5' style="text-align: center;">E-commerce Fashion Site: Betrende</p>
-                    <div class='column top'>
+                    <div class="sh3" style="text-align: center; margin-bottom: 5px">Web Development Project</div>
+                    <p class='sh1' style="text-align: center">Full-Stack Developer | 2023 Aug - 2023 Oct</p>
+                    <br>
+                    <div class='column'>
                         <img src="../images/betrende_img.png" style="height: 220px; width: 430px;" alt="project1_image">
                         <br>
-                        <p class='sh1' style="text-align: center">Pages: </p>
-                        <div class="row2" style="justify-content: center;">
-                            <a href="https://github.com/Joomen10/BETRENDE"><img src="../images/github_icon.png" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;">GitHub</sh3></a>
-                            <a href="https://medium.com/@park11871247/nyc-yellow-taxi-ride-data-analysis-7837dda95f0e"><img src="../images/medium_icon.svg" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;">Medium</sh3></a>
-                        </div>  
-                        <br>
-                        <p class='sh1' style="text-align: center">Skills: </p>
+                        <p class='sh1' style="text-align: center; font-weight: bold; font-size: 17px;  margin-bottom: 5px">E-commerce Fashion Site: Betrende</p>
+                        <!-- <div class="sh1 row2" style="justify-content: center;">&nbsp;SKILLS:</div> -->
                         <div class="row2">
                             <img src="../images/html_css_js_icon.png" style="height: 50px; width: 100px;" alt="html_icon">
                             <img src="../images/mysql_icon.svg" style="height: 70px; width: 150px;" alt="html_icon">
-                            <img src="../images/springboot_icon.png" style="height: 50px; width: 110px;" alt="html_icon">
+                            <img src="../images/springboot_icon.png" style="height: 40px; width: 170px;" alt="html_icon">
                             <img src="../images/java_icon.png" style="height: 50px; width: 100px;" alt="html_icon">
                         </div> 
-                        <br>
-                        <p class='sh1' style=" font-size: large; font-weight: bold; text-align: center">Full-Stack Developer</p>
-                        <p class='sh1' style=" font-size: large; font-weight: bold; text-align: center">2023 Aug - 2023 Oct </p>
+                        <div class="sh1 row2" style="justify-content: center; margin-bottom: 5px">&nbsp;LINKS:</div>
+                        <div class="row2" style="justify-content: center;">
+                            <a href="https://github.com/Joomen10/BETRENDE"><img src="../images/github-icon-2.svg" style="height: 50px; width: 50px;" alt="github_icon"><sh3 style="font-size: x-large; font-weight: bold;"></sh3></a>
+                        </div>                      
                     </div>
                 </div>
-                <a href='https://github.com/Joomen10/Buddies-AI/tree/main' target='_blank' rel='noopener' class='column tile tl'>
-                    <div class='column top'>
-                        <svg class='icon-l'><use href='images/sprites.svg#Ramp'></use></svg> 
-                        <img src="../images/buddiesAI_img.png" style="height: 200px; width: 400px;"alt="project2_image">
-                        <p class='p1'>LIKELION US Hackathon: Buddies-AI</p>
-                        <br><br>
-                    </div>
-                    <div class='row bottom'>
-                        <p class='sh1'>Full-Stack Developer · <br> 2024 Jan</span></p>
-                    </div>
-                </a>
-                <span target='_blank' rel='noopener' class='column tile2 tl2'>
-                    <div class='column top2'>
-                        <nav class="row">
-                            <button id="playButton">Play</button>
-                            <button id="pauseButton">Pause</button>
-                            <button id="stopButton">Stop</button>
-                        </nav>
-                        <video id="myVideo" width="340" height="208.5" controls>
-                            <source src="../images/DemoVid.mp4" type="video/mp4" alt="project3_video">
-                            Your browser does not support the video tag.
-                        </video>
-                        <script>
-                            $(document).ready(function() {
-                                var video = $("#myVideo").get(0); 
-                    
-                                $("#playButton").click(function() {
-                                    video.play();
-                                });
-                    
-                                $("#pauseButton").click(function() {
-                                    video.pause();
-                                });
-                    
-                                $("#stopButton").click(function() {
-                                    video.pause();
-                                    video.currentTime = 0;
-                                });
-                            });
-                        </script>       
-                        <p class='p12'>HackNYU Hackathon: BounceNYC</p>
-                    </div>
-                    <br><br>
-                    <div class='row bottom'>
-                        <p class='sh1'>Back-end Developer · <br> 2023 Dec</p>
-                    </div>
-                </span>
             </section>
         </main>
     </body>

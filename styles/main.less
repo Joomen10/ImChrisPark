@@ -100,6 +100,18 @@ video {
 
 
 }
+
+video2 {
+
+  border-radius: 4px;
+
+  
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+
+
+}
 .sh1 {
   font-family: "Open Sans", sans-serif;
   font-size: 15px;
@@ -139,7 +151,7 @@ svg {
 .row2 {
   display: flex;        /* Enable flexbox for this container */
   align-items: center;  /* Vertically align the icons to the center */
-  gap: 10px;            /* Add some space between the icons */
+  gap: 5px;            /* Add some space between the icons */
 }
 .column {
   display: flex;
@@ -331,6 +343,108 @@ nav {
   transition: 0s;
 }
 
+#playButton2 {
+
+  font-family: @font-family;
+  color: #e0e8f0;
+  background-color: #2d2d2d;;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  text-decoration: none;
+
+  align-items: center;
+  padding: 10px;
+  gap: 6px;
+
+  transition: 0.08s;
+  
+}
+
+#playButton2:hover {
+  
+  box-shadow: inset 0px -2px 0px 4px #e0e8f0;
+
+  padding: 10px 14px 11px 12px;
+
+  transition: 0.08s;
+}
+#playButton2:active {
+  box-shadow: inset 0px 1px 0px 2px #e0e8f0;
+
+  padding: 10px 14px 11px 12px;
+
+  transition: 0s;
+}
+
+#pauseButton2 {
+
+  font-family: @font-family;
+  color: #e0e8f0;
+  background-color: #2d2d2d;;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  text-decoration: none;
+
+  align-items: center;
+  padding: 10px;
+  gap: 6px;
+
+  transition: 0.08s;
+  
+}
+
+#pauseButton2:hover {
+
+  box-shadow: inset 0px -2px 0px 4px #e0e8f0;
+
+  padding: 10px 14px 11px 12px;
+
+  transition: 0.08s;
+}
+#pauseButton2:active {
+  box-shadow: inset 0px 1px 0px 2px #e0e8f0;
+
+  padding: 10px 14px 11px 12px;
+
+  transition: 0s;
+}
+
+#stopButton2 {
+
+  font-family: @font-family;
+  color: #e0e8f0;
+  background-color: #2d2d2d;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  text-decoration: none;
+
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+
+  transition: 0.08s;
+  
+}
+
+#stopButton2:hover {
+
+  box-shadow: inset 0px -2px 0px 4px #e0e8f0;
+
+  padding: 10px 14px 11px 12px;
+
+  transition: 0.08s;
+}
+#stopButton2:active {
+  box-shadow: inset 0px 1px 0px 2px #e0e8f0;
+
+  padding: 10px 14px 11px 12px;
+
+  transition: 0s;
+}
+
 
 }
 
@@ -390,10 +504,9 @@ main {
 .tl {
   /* width: 480px; */
   width: 35.29411765%;
-  height: 550px;
+  height: 580px;
   box-shadow: inset 1px 3px 3px 3px var(--darkShade);
-
-  padding: 40px;
+  padding: 30px;
 }
 // .tl:hover {
 //   box-shadow: inset 0px -8px 0px 12px var(--darkerShade);
@@ -403,30 +516,6 @@ main {
 
 //   padding: 50px 40px 30px 40px;
 // }
-
-.tl2 {
-  /* width: 480px; */
-  width: 35.29411765%;
-  height: 550px;
-  box-shadow: inset 0px -8px 0px 12px var(--darkShade);
-
-  padding: 40px;
-}
-
-.tile2 {
-  color: var(--darkShade);
-  border-radius: 8px;
-  text-decoration: none;
-  
-  box-sizing: border-box;
-  transition: 0.08s;
-}
-
-
-#flashing {
-  animation: 2.0s infinite flashing;
-}
-
 
 
 .terminal-window {
